@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 08 A</title>
+</head>
+
+<body>
+    <!-- 
+        fieldset => to create the specify the particular area for input fields
+        legend => legend is used as nested tag of fieldset for displaying text
+     -->
+    <fieldset style="width: 500px; margin:auto;">
+        <legend align="center">
+            <h2>Sign Up</h2>
+        </legend>
+        <form action="Class_08-B.html" method="get">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name"><b>Full Name</b></label>
+                    </td>
+                    <td>
+                        <input type="text" name="Full_Name" id="name" placeholder="Enter Full Name" size="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Fname"><b>Father Name</b></label>
+                    </td>
+                    <td>
+                        <input type="text" name="F_Name" id="Fname" placeholder="Enter Father Name" size="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email"><b>Email</b></label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="Email" placeholder="Enter Email" size="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Gender:</b></span>
+                    </td>
+                    <td>
+                        <label for="male">Male</label>
+                        <input type="radio" name="Gender" id="male" required>
+                        <label for="female">Female</label>
+                        <input type="radio" name="Gender" id="female" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Hobbies:</b></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Hobbie1" id="Hobbie1">
+                        <label for="Hobbie1">Hobbie1</label>
+                        <input type="checkbox" name="Hobbie2" id="Hobbie2">
+                        <label for="Hobbie2">Hobbie2</label>
+                        <input type="checkbox" name="Hobbie3" id="Hobbie3">
+                        <label for="Hobbie3">Hobbie3</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Select the Country</b></span>
+                    </td>
+                    <td>
+                        <select name="Country" required>
+                            <option value="Null" disabled selected>Select Option </option>
+                            <optgroup label="Asia">
+                                <option value="pak">Pakistan</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="KSA">Kingdom Of Saudi Arabia</option>
+                            </optgroup>
+                            <optgroup label="Africa">
+                                <option value="South Africa">South Africa</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Feedback Form:</b></td>    
+                    <td>
+                        <textarea name="Comments" id="Form" cols="40" rows="5" placeholder="Please write down your Comments"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Upload Challan:</b></td>
+                    <td>
+                        <input type="file" name="Challan" id="Challan" required accept="image/*,.pdf">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>

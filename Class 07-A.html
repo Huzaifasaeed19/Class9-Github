@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 07-A</title>
+</head>
+<body>
+    <!-- Table are of two type :
+        1. Short Table: For the Small Organiation want to store the data of a Single month
+        2. Long Table :Consists Upon the Number of Mutliple Pages, i.e  
+        thead, tbody, tfoot    
+    -->
+    <!-- Forms
+        Form => To get the input from the user we uses the form 
+                There are two Types of Attributes Present in it 
+                 1. Action => To Relocate the page after submiting the form
+                 2. Method => There are two types of Methods in it GET/POST
+                      i.  GET => it is used to Send the data by embeding it in to the URL.
+                    ii. POST => it is used for security purpose and send the data without Embedding into the URL
+     -->
+     <form action="Class_07-B.html" method="POST">
+        <!-- 
+            text => generates a text field
+            size => Used for justifying the width of the input size
+            maxlength => Used for giving the maximum range of input
+            minlength => Used for giving the minimum range of input
+            placeholder => generate the watermark inside the text-field
+            required => it is used to fill the particular field compulsary when submitting the form 
+            readonly => used for reading only the Data
+
+            DOM = Document Object Model
+            There are two types of DOM.
+            1. Virtual DOM
+            2. Real DOM
+            
+         -->
+         <!-- 
+            name is the most important attribute to send the data on the backend
+          -->
+        <input type="text" size="40" placeholder="Enter Name" maxlength="10" minlength="5" name="text" required><br>
+        <input type="password" size="40" placeholder="Enter Password" maxlength="10" minlength="5" name="pass" required>
+        <br>
+        <Span>Gender: </Span>
+        &emsp;
+        <input type="radio" name="Gender" id="Male" value="Male">
+        <label for="Male">Male</label>
+        &emsp;
+        <input type="radio" name="Gender" id="Female" value="Female">
+        <label for="Female">Female</label>
+
+        <br>
+        <input type="submit">
+        <!-- 
+            if the type of input is number then maxlength,minlength,size doesn't Work 
+         -->
+
+     </form>
+
+</body>
+</html>
